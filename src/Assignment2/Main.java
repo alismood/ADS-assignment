@@ -36,7 +36,6 @@ public class Main {
         return null;
     }
 
-
     //Task2
     public static void deposit(String username, double amount) {
         BankAccount acc = searchAccount(username);
@@ -148,16 +147,15 @@ public class Main {
         // Sample
         addAccount(1, "Ali", 150000);
         addAccount(2, "Sara", 220000);
-
         while (true) {
             System.out.println("\nMAIN MENU");
-            System.out.println("1Bank");
-            System.out.println("2ATM");
-            System.out.println("3Admin");
-            System.out.println("4Transactions");
-            System.out.println("5ills");
-            System.out.println("6Array Demo");
-            System.out.println("7Exit");
+            System.out.println("1 Bank");
+            System.out.println("2 ATM");
+            System.out.println("3 Admin");
+            System.out.println("4 Transactions");
+            System.out.println("5 ills");
+            System.out.println("6 Array Demo");
+            System.out.println("7 Exit");
 
             int choice = sc.nextInt();
             switch (choice) {
