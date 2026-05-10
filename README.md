@@ -1,5 +1,5 @@
 Zhabaikhan Ali IT-2503
-All works code in src/Assignment1 package
+All works code in src/Assignment4 package
 
 
 <img width="949" height="696" alt="Screenshot 2026-05-10 at 19 18 45" src="https://github.com/user-attachments/assets/f3f5ee8e-4727-4561-b3c4-30c484b5bb5a" />
