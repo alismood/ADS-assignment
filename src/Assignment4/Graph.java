@@ -16,7 +16,7 @@ public class Graph {
      }
 
     public void addVertex(int id) {
-        if (id >= adj.length) return; // Prevent OutOfBounds
+        if (id >= adj.length) return;
         if (adj[id] == null) {
             adj[id] = new LinkedList<>();
         }
