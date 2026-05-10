@@ -19,7 +19,7 @@ public class Sorter {
         }
     }
 
-    // Category B: Quick Sort
+    //Quick Sort
     public void advancedSort(int[] arr) {
         quickSort(arr, 0, arr.length - 1);
     }
@@ -58,7 +58,7 @@ public class Sorter {
         Random rd = new Random();
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
-            arr[i] = rd.nextInt(10000); // Random numbers up to 10,000
+            arr[i] = rd.nextInt(10000); // Random numbers
         }
         return arr;
     }

@@ -21,24 +21,24 @@ public class Experiment {
     }
 
     public void runAllExperiments() {
-        int[] sizes = {10, 100, 1000}; // Small, Medium, Large [cite: 56, 57, 58]
+        int[] sizes = {10, 100, 1000}; // Small, Medium, Big
 
         for (int size : sizes) {
             System.out.println("\n--- Testing Array Size: " + size + " ---");
             int[] randomArray = sorter.generateRandomArray(size);
 
-            // Measure Basic Sort (Bubble)
+            //(Bubble)
             int[] bubbleArr = randomArray.clone();
             long bubbleTime = measureSortTime(bubbleArr, "basic");
             System.out.println("Bubble Sort Time: " + bubbleTime + " ns");
 
-            // Measure Advanced Sort (Quick)
+            //(Quick)
             int[] quickArr = randomArray.clone();
             long quickTime = measureSortTime(quickArr, "advanced");
             System.out.println("Quick Sort Time: " + quickTime + " ns");
 
-            // Measure Search (Linear)
-            long searchTime = measureSearchTime(randomArray, -1); // Worst case search
+            //(Linear)
+            long searchTime = measureSearchTime(randomArray, -1); //bad case search
             System.out.println("Linear Search Time: " + searchTime + " ns");
         }
     }
